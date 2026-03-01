@@ -62,5 +62,5 @@ Hasil bisa sedikit berbeda tergantung sistem dan lokasi pengguna.
 
 ---
 
-Dibuat oleh: **Kishi**  
+Dibuat oleh: **Satria Farel**  
 Tahun: 2026
