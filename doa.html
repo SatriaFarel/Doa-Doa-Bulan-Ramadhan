@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doa Sahur & Buka Puasa</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .arab {
+            font-family: 'Amiri', serif;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-up {
+            animation: fadeUp .8s ease forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-emerald-900 to-emerald-700 text-white min-h-screen">
+
+    <header class="text-center py-10">
+        <h1 class="text-4xl font-bold text-amber-300">Doa Ramadhan</h1>
+        <p class="mt-2 text-emerald-100">Doa Sahur dan Buka Puasa</p>
+
+        <div class="mt-6 text-sm text-emerald-200">
+            <p id="tanggalMasehi"></p>
+            <p id="tanggalHijriah"></p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-16 space-y-20">
+
+        <!-- DOA SAHUR -->
+        <section>
+            <h2 class="text-3xl text-center font-semibold text-amber-200 mb-8">
+                Doa Sahur
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Niat puasa -->
+                <article
+                    class="fade-up bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg hover:scale-105 transition">
+                    <h3 class="font-semibold text-amber-300 mb-3">Niat Puasa Ramadhan</h3>
+                    <p class="arab text-2xl text-center leading-loose">
+                        نَوَيْتُ صَوْمَ غَدٍ عَنْ أَدَاءِ فَرْضِ شَهْرِ رَمَضَانَ هَذِهِ السَّنَةِ لِلَّهِ تَعَالَى
+                    </p>
+                    <p class="italic text-center mt-3 text-emerald-100">
+                        Nawaitu shauma ghadin ‘an adā’i fardhi syahri Ramadhāna hādzihis sanati lillāhi ta‘ālā
+                    </p>
+                    <p class="text-sm mt-3 text-center leading-relaxed">
+                        Artinya: Saya niat berpuasa esok hari untuk menunaikan fardhu Ramadhan karena Allah Ta’ala.
+                    </p>
+                </article>
+
+                <!-- Doa sebelum makan -->
+                <article
+                    class="fade-up bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg hover:scale-105 transition">
+                    <h3 class="font-semibold text-amber-300 mb-3">Doa Sebelum Makan</h3>
+                    <p class="arab text-2xl text-center leading-loose">
+                        اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ
+                    </p>
+                    <p class="italic text-center mt-3 text-emerald-100">
+                        Allahumma barik lana fima razaqtana wa qina ‘adzaban nar
+                    </p>
+                    <p class="text-sm mt-3 text-center leading-relaxed">
+                        Artinya: Ya Allah, berkahilah rezeki yang Engkau berikan dan lindungi kami dari siksa neraka.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- DOA BUKA PUASA -->
+        <section>
+            <h2 class="text-3xl text-center font-semibold text-amber-200 mb-8">
+                Doa Buka Puasa
+            </h2>
+
+            <div class="grid md:grid-cols-1 gap-8">
+                <!-- Doa berbuka puasa -->
+                <article
+                    class="fade-up bg-amber-400/10 backdrop-blur-md p-6 rounded-xl shadow-lg border border-amber-300">
+                    <h3 class="font-semibold text-amber-300 mb-3">Doa Berbuka Puasa</h3>
+                    <p class="arab text-2xl text-center leading-loose">
+                        اللَّهُمَّ لَكَ صُمْتُ وَبِكَ آمَنْتُ وَعَلَيْكَ تَوَكَّلْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ
+                        بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ
+                    </p>
+                    <p class="italic text-center mt-3 text-emerald-100">
+                        Allahumma laka shumtu wa bika aamantu wa ‘alaika tawakkaltu wa ‘ala rizqika afthartu
+                        birahmatika ya arhamar rahimin
+                    </p>
+                    <p class="text-sm mt-3 text-center leading-relaxed">
+                        Artinya: Ya Allah, untuk-Mu aku berpuasa, kepada-Mu aku beriman, kepada-Mu aku bertawakal,
+                        dan dengan rezeki-Mu aku berbuka, dengan rahmat-Mu wahai Yang Maha Pengasih.
+                    </p>
+                </article>
+
+                <!-- Doa setelah berbuka -->
+                <article
+                    class="fade-up bg-amber-400/10 backdrop-blur-md p-6 rounded-xl shadow-lg hover:scale-105 transition border border-amber-300">
+                    <h3 class="font-semibold text-amber-300 mb-3">Doa Setelah Berbuka</h3>
+                    <p class="arab text-2xl text-center leading-loose">
+                        ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ وَثَبَتَ الأَجْرُ إِنْ شَاءَ اللَّهُ
+                    </p>
+                    <p class="italic text-center mt-3 text-emerald-100">
+                        Dzahabazh zhoma’u wabtallatil ‘uruqu wa tsabatal ajru insyaa Allah
+                    </p>
+                    <p class="text-sm mt-3 text-center leading-relaxed">
+                        Artinya: Telah hilang rasa haus dan urat-urat telah basah serta pahala telah tetap insyaAllah.
+                    </p>
+                </article>
+
+
+            </div>
+        </section>
+
+        <!-- DALIL -->
+        <section>
+            <h2 class="text-3xl text-center font-semibold text-amber-200 mb-8">
+                📖 Dalil Tentang Puasa
+            </h2>
+
+            <!-- Dalil Al-Qur'an dan Hadist -->
+            <article class="bg-white/10 p-6 rounded-xl shadow-lg space-y-4">
+                <h3 class="font-semibold text-amber-300">QS. Al-Baqarah: 183</h3>
+                <p class="arab text-2xl text-center leading-loose">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن
+                    قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ
+                </p>
+                <p class="text-sm text-center text-emerald-100">
+                    Wahai orang-orang yang beriman, diwajibkan atas kamu berpuasa sebagaimana diwajibkan atas orang
+                    sebelum kamu agar kamu bertakwa.
+                </p>
+
+                <hr class="border-emerald-600">
+
+                <h3 class="font-semibold text-amber-300">Hadits (HR. Bukhari & Muslim)</h3>
+                <p class="text-sm text-emerald-100">
+                    “Barang siapa berpuasa Ramadhan dengan iman dan mengharap pahala,
+                    maka diampuni dosa-dosanya yang telah lalu.”
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 text-sm text-emerald-100 border-t border-emerald-600">
+        © 2026 Doa Ramadhan | Dibuat oleh Satria Farel
+    </footer>
+
+    <script>
+        const now = new Date();
+
+        const masehi = new Intl.DateTimeFormat('id-ID', {
+            weekday: 'long',
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        }).format(now);
+
+        const hijriah = new Intl.DateTimeFormat('id-ID-u-ca-islamic', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        }).format(now);
+
+        document.getElementById("tanggalMasehi").textContent = "📅 " + masehi;
+        document.getElementById("tanggalHijriah").textContent = "🌙 " + hijriah + " H";
+    </script>
+
+</body>
+
+</html>
